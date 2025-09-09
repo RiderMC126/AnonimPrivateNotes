@@ -3,6 +3,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
+from db import init_db
 import logging
 import asyncio
 import uvicorn
@@ -26,8 +27,19 @@ async def index(request: Request):
         {"request": request, "title": "AnonimPrivateNotes"}
     )
 
+# about page
+@app.get("/about", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse(
+        "about.html", 
+        {"request": request, "title": "Как это работает?"}
+    )
+
+
+
 
 # Start application
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
+    asyncio.run(init_db())
     uvicorn.run("main:app", host="127.0.0.1", port=3000, reload=True)
