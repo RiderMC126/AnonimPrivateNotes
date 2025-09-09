@@ -41,5 +41,5 @@ async def index(request: Request):
 # Start application
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-    asyncio.run(init_db())
+    init_db()
     uvicorn.run("main:app", host="127.0.0.1", port=3000, reload=True)
