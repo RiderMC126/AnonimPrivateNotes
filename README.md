@@ -47,3 +47,9 @@
    ```bash
    git clone https://github.com/RiderMC126/AnonimPrivateNotes.git
    cd AnonimPrivateNotes
+   ```
+2. **Запустите сервер**
+   ```bash
+   py main.py
+   ```
+   
