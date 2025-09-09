@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     fileInput.addEventListener('change', () => {
         filePlaceholder.textContent = fileInput.files.length > 0
-            ? `Выбран файл: ${fileInput.files[0].name}`
+            ? `Выбран файл: ${fileInput.files[0].name} (будет доступен для скачивания)`
             : 'Выберите файл ⚡ Файл не выбран';
     });
 
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error('Form submission error:', error);
-            alert('Ошибка при отправке формы. Проверьте подключение к серверу.');
+            alert('Ошибка при отправке формы: Проверьте подключение к серверу или попробуйте снова позже.');
         }
     });
 });

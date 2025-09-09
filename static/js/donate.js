@@ -1,6 +1,5 @@
 function copyToClipboard(text, element) {
     navigator.clipboard.writeText(text).then(function() {
-        // Показываем уведомление
         const copyHint = element.closest('.crypto-card').querySelector('.copy-hint');
         const originalContent = copyHint.textContent;
         copyHint.textContent = 'Адрес скопирован!';
@@ -15,7 +14,6 @@ function copyToClipboard(text, element) {
     });
 }
 
-// Привязываем обработчик события к каждому элементу crypto-card
 document.querySelectorAll('.crypto-card').forEach(card => {
     card.addEventListener('click', function() {
         const address = this.querySelector('.crypto-address').textContent;

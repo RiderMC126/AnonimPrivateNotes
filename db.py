@@ -21,8 +21,11 @@ def init_db():
         CREATE TABLE IF NOT EXISTS records (
             id TEXT PRIMARY KEY,
             content TEXT NOT NULL,
-            delete_date DATETIME NOT NULL,
-            counter INTEGER NOT NULL
+            delete_date TEXT NOT NULL,
+            counter INTEGER DEFAULT 0,
+            is_file BOOLEAN DEFAULT FALSE,
+            filename TEXT,
+            mime_type TEXT
         )
     ''')
 
