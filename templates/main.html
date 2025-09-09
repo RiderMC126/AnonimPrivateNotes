@@ -14,28 +14,37 @@
             <label for="dontShow" class="checkbox-label">Больше не показывать</label>
         </div>
     </div>
-    <div class="form-container">
-        <textarea class="text-area" placeholder="Текст записки" maxlength="5000"></textarea>
+    
+    <!-- ОБНОВЛЕНО: добавлена форма с правильными атрибутами -->
+    <form class="form-container" method="POST" action="/create">
+        <textarea class="text-area" name="text" placeholder="Текст записки" maxlength="5000" required></textarea>
         <div class="char-counter">0 / 5000</div>
+        
         <div class="additional-options">
             <a href="#" class="options-toggle">⚙ Дополнительные параметры ⚙</a>
         </div>
+        
         <div class="expiry-container">
             <label class="expiry-label">В любом случае удалить записку через</label>
-            <select class="expiry-select">
-                <option>7 дней</option>
-                <option>1 день</option>
-                <option>1 час</option>
-                <option>30 минут</option>
+            <select class="expiry-select" name="expiry_time">
+                <option value="7 дней">7 дней</option>
+                <option value="1 день">1 день</option>
+                <option value="1 час">1 час</option>
+                <option value="30 минут">30 минут</option>
             </select>
         </div>
+        
         <div class="file-upload">
             <label class="file-label">Отправить файл (вместо текста записки)</label>
             <div class="file-input-container">
-                <input type="file" class="file-input">
+                <input type="file" class="file-input" name="file_upload">
                 <div class="file-placeholder">Выберите файл ⚡ Файл не выбран</div>
             </div>
         </div>
-        <button class="create-btn">Создать записку</button>
-    </div>
+        
+        <!-- ОБНОВЛЕНО: кнопка теперь submit -->
+        <button type="submit" class="create-btn">Создать записку</button>
+    </form>
+
+    <script src="/static/js/script.js"></script>
 </main>

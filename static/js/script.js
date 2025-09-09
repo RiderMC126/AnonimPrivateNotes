@@ -26,9 +26,10 @@
 
         // Анимация кнопки создания
         const createBtn = document.querySelector('.create-btn');
-        createBtn.addEventListener('click', function() {
+        createBtn.addEventListener('mousedown', function() {
             this.style.transform = 'scale(0.98)';
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 150);
+        });
+        
+        createBtn.addEventListener('mouseup', function() {
+            this.style.transform = '';
         });

@@ -59,6 +59,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .info-text strong {
@@ -70,6 +71,7 @@ body {
     font-size: 12px;
     line-height: 1.4;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .more-link {
@@ -231,9 +233,6 @@ body {
 }
 
         
-
-        
-
 @media (max-width: 768px) {
     .header {
         padding: 10px 15px;
