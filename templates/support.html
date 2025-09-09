@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/support.css">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <main class="support-container">
+        <h1 class="support-title">Как с нами связаться?</h1>
+        <div class="telegram-section">
+            <p class="support-text">Поддержка в <a href="https://t.me/NoLogs99" class="telegram-link">Telegram</a></p>
+            <div class="telegram-username">AnonimPrivateNotes</div>
+            <div class="qr-container">
+                <div class="qr-code">
+                    <img src="/static/img/qrcode.svg" alt="QR код для Telegram" width="170" height="170">
+                </div>
+                <div class="qr-label">Telegram</div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+</html>

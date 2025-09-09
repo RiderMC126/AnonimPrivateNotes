@@ -1,0 +1,131 @@
+.support-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+        
+.support-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+        
+.telegram-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    backdrop-filter: blur(10px);
+}
+        
+.support-text {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+        
+.telegram-link {
+    display: inline-block;
+    background: #0088cc;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 1rem 1.5rem 0;
+    transition: all 0.3s ease;
+}
+        
+.telegram-link:hover {
+    background: #006699;
+    transform: translateY(-2px);
+}
+        
+.telegram-username {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+        
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+        
+.qr-code {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+        
+.qr-label {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+        
+.email-section {
+    margin-top: 3rem;
+}
+        
+.email-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+        
+.email-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+        
+.email-description {
+    color: #ccc;
+    text-align: left;
+    flex: 1;
+}
+        
+.email-address {
+    color: #4CAF50;
+    font-family: monospace;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+        
+.email-address:hover {
+    color: #66BB6A;
+}
+        
+@media (max-width: 768px) {
+    .support-container {
+        padding: 1rem;
+    }
+            
+    .support-title {
+        font-size: 2rem;
+    }
+            
+    .email-row {
+        flex-direction: column;
+        text-align: center;
+    }
+            
+    .email-address {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+            
+    .telegram-section {
+        padding: 1.5rem;
+    }
+}

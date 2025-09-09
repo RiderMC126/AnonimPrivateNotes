@@ -52,6 +52,14 @@ async def about(request: Request):
         {"request": request, "title": "Как это работает?"}
     )
 
+# support page
+@app.get("/support", response_class=HTMLResponse)
+async def support(request: Request):
+    return templates.TemplateResponse(
+        "support.html", 
+        {"request": request, "title": "Контакты"}
+    )
+
 # Create note
 @app.post("/create")
 async def create_note(
@@ -109,7 +117,7 @@ async def create_note(
     
     return JSONResponse(content={"note_url": note_url})
 
-# View note
+# note page
 @app.get("/note/{note_id}", response_class=HTMLResponse)
 async def view_note(request: Request, note_id: str, conn: sqlite3.Connection = Depends(get_db)):
     cursor = conn.cursor()
