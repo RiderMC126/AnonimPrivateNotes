@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/donate.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    <main class="donate-container">
+        <h1 class="donate-title">Поддержать проект</h1>
+        <div class="crypto-section">
+            <h2 class="crypto-title">Криптовалютой</h2>
+            <!-- Bitcoin -->
+            <div class="crypto-card" onclick="copyToClipboard('bc1q33wqu54wauuf4eg4j93z0upx2hlrut4hq7qafc')">
+                <div class="crypto-qr">
+                    <!-- QR код для Bitcoin -->
+                    <div class="qr-code">
+                        <img src="/static/img/bitcoin.svg" alt="QR код для Bitcoin" width="120" height="120">
+                    </div>
+                </div>
+                <div class="crypto-info">
+                    <div class="crypto-name">Bitcoin, BTC</div>
+                    <div class="crypto-address" id="btc-address">bc1q33wqu54wauuf4eg4j93z0upx2hlrut4hq7qafc</div>
+                    <div class="copy-hint">Нажмите для копирования адреса</div>
+                </div>
+            </div>
+            
+            <!-- Ethereum -->
+            <div class="crypto-card" onclick="copyToClipboard('0xa281c5Eb0c6fCC1c1120209297E504170EAC06a')">
+                <div class="crypto-qr">
+                    <!-- QR код для Ethereum -->
+                    <div class="qr-code">
+                        <img src="/static/img/ethereum.svg" alt="QR код для Ethereum" width="120" height="120">
+                    </div>
+                </div>
+                <div class="crypto-info">
+                    <div class="crypto-name">Ethereum, ETH</div>
+                    <div class="crypto-address" id="eth-address">0xa281c5Eb0c6fCC1c1120209297E504170EAC06a</div>
+                    <div class="copy-hint">Нажмите для копирования адреса</div>
+                </div>
+            </div>
+            
+            <!-- Tether -->
+            <div class="crypto-card" onclick="copyToClipboard('TRC20: TYour1TetherAddress2Here3TRC20')">
+                <div class="crypto-qr">
+                    <!-- QR код для Tether -->
+                    <div class="qr-code">
+                        <img src="/static/img/usdt.svg" alt="QR код для USDT" width="120" height="120">
+                    </div>
+                </div>
+                <div class="crypto-info">
+                    <div class="crypto-name">Tether, USDT.TRC20</div>
+                    <div class="crypto-address" id="usdt-address">TYour1TetherAddress2Here3TRC20</div>
+                    <div class="copy-hint">Нажмите для копирования адреса</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+    <script src="/static/js/donate.js"></script>
+</body>
+</html>

@@ -60,6 +60,14 @@ async def support(request: Request):
         {"request": request, "title": "Контакты"}
     )
 
+# support page
+@app.get("/donate", response_class=HTMLResponse)
+async def donate(request: Request):
+    return templates.TemplateResponse(
+        "donate.html", 
+        {"request": request, "title": "Поддержать"}
+    )
+
 # Create note
 @app.post("/create")
 async def create_note(
