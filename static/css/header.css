@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #333;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: #999;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.address-bar {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: 400px;
+    font-size: 14px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.logo-icon {
+    background: linear-gradient(45deg, #4a9eff, #00d4ff);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-link {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-link:hover {
+    color: #fff;
+}
+
+.header-link.active {
+    color: #fff;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-icon {
+    background: none;
+    border: none;
+    color: #999;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-icon:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.bookmarks-text {
+    color: #ccc;
+    font-size: 13px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

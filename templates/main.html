@@ -1,0 +1,41 @@
+<main class="main-container">
+    <h1 class="title">Новая записка</h1>
+    <div class="info-card">
+        <button class="close-btn">×</button>
+        <div class="info-text">
+            <strong>Создайте одноразовую записку, которая уничтожится после первого прочтения.</strong>
+        </div>
+        <div class="info-details">
+            Передавайте важные данные в мессенджерах, используя ссылки на записки, чтобы третьи лица не смогли их узнать!
+        </div>
+        <a href="#" class="more-link">Подробнее...</a>
+        <div class="checkbox-container">
+            <input type="checkbox" class="checkbox" id="dontShow" checked>
+            <label for="dontShow" class="checkbox-label">Больше не показывать</label>
+        </div>
+    </div>
+    <div class="form-container">
+        <textarea class="text-area" placeholder="Текст записки" maxlength="5000"></textarea>
+        <div class="char-counter">0 / 5000</div>
+        <div class="additional-options">
+            <a href="#" class="options-toggle">⚙ Дополнительные параметры ⚙</a>
+        </div>
+        <div class="expiry-container">
+            <label class="expiry-label">В любом случае удалить записку через</label>
+            <select class="expiry-select">
+                <option>7 дней</option>
+                <option>1 день</option>
+                <option>1 час</option>
+                <option>30 минут</option>
+            </select>
+        </div>
+        <div class="file-upload">
+            <label class="file-label">Отправить файл (вместо текста записки)</label>
+            <div class="file-input-container">
+                <input type="file" class="file-input">
+                <div class="file-placeholder">Выберите файл ⚡ Файл не выбран</div>
+            </div>
+        </div>
+        <button class="create-btn">Создать записку</button>
+    </div>
+</main>
