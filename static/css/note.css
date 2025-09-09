@@ -1,0 +1,132 @@
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.note-container {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.note-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note-deleted {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #4a9eff, #00d4ff);
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+}
+
+.note-content {
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+        
+.note-content h1, .note-content h2, .note-content h3, 
+.note-content h4, .note-content h5, .note-content h6 {
+    margin: 1em 0 0.5em 0;
+}
+        
+.note-content h1 { font-size: 2em; color: #333; }
+.note-content h2 { font-size: 1.7em; color: #444; }
+.note-content h3 { font-size: 1.5em; color: #555; }
+.note-content h4 { font-size: 1.3em; color: #666; }
+.note-content h5 { font-size: 1.1em; color: #777; }
+.note-content h6 { font-size: 1em; color: #888; }
+        
+.note-content p {
+    margin: 1em 0;
+}
+        
+.note-content a {
+    color: #007bff;
+    text-decoration: underline;
+}
+        
+.note-content a:hover {
+    color: #0056b3;
+}
+        
+.note-content hr {
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 2em 0;
+}
+        
+.note-content small {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+        
+.note-content strong {
+    font-weight: bold;
+}
+        
+.note-content em {
+    font-style: italic;
+}
+        
+.note-content u {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .note-container {
+        padding: 20px;
+    }
+
+    .note-content {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}

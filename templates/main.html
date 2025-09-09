@@ -15,9 +15,8 @@
         </div>
     </div>
     
-    <!-- ОБНОВЛЕНО: добавлена форма с правильными атрибутами -->
     <form class="form-container" method="POST" action="/create">
-        <textarea class="text-area" name="text" placeholder="Текст записки" maxlength="5000" required></textarea>
+        <textarea class="text-area" name="text" placeholder="Текст записки (поддерживается форматирование HTML и Markdown)" maxlength="5000"></textarea>
         <div class="char-counter">0 / 5000</div>
         
         <div class="additional-options">
@@ -31,9 +30,9 @@
                 <option value="15 минут">15 минут</option>
                 <option value="30 минут">30 минут</option>
                 <option value="1 час">1 час</option>
-                <option value="1 часа">2 часа</option>
+                <option value="2 часа">2 часа</option>
                 <option value="12 часов">12 часов</option>
-                <option value="1 день">1 день</option>
+                <option value="1 день" selected>1 день</option>
                 <option value="2 дня">2 дня</option>
                 <option value="7 дней">7 дней</option>
             </select>
@@ -47,9 +46,15 @@
             </div>
         </div>
         
-        <!-- ОБНОВЛЕНО: кнопка теперь submit -->
         <button type="submit" class="create-btn">Создать записку</button>
     </form>
-
-    <script src="/static/js/script.js"></script>
+    <div class="modal" id="success-modal" style="display: none;">
+        <div class="modal-content">
+            <h2 class="section-title">Записка создана!</h2>
+            <p class="intro-text">Ваша записка доступна по ссылке:</p>
+            <a href="#" id="note-url" class="intro-text"></a>
+            <p class="intro-text">Скопируйте эту ссылку и отправьте её получателю. Записка будет удалена после первого просмотра или по истечении выбранного времени.</p>
+            <button class="cta-button" id="close-modal">Закрыть</button>
+        </div>
+    </div>
 </main>
